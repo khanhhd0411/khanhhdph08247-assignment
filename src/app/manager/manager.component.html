@@ -1,1 +1,60 @@
-<h1>Quản lý thông tin</h1>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Thông tin thành viên</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+
+			<form method="POST" name="fr_update">
+				<h3 style="align: center"> Thông tin thành viên</h3>
+				<table class="table">
+					<caption>Danh sách thành viên đã đăng ký</caption><br><br>
+					<input type="hidden" name="id_user" value="">
+					<tr>
+						<td>Họ tên : </td>
+						<td><input type="text" name="name" /></td>
+					</tr>
+					<tr>
+						<td>Địa chỉ email : </td>
+						<td><input type="text" name="email" /></td>
+					</tr>
+					<tr>
+						<td>Cấp độ : </td>
+						<td>
+							<select name="level">
+          				<option value="1">Administrator</option>
+          				<option value="2">Member</option>
+          			</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" name="save" value="Lưu thông tin"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+	</div><!-- /.container -->
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
